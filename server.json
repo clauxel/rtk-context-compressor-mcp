@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.rtkcontext/rtkcontext-mcp",
-  "description": "RTK Context Compressor is a hosted remote MCP for OpenAI Codex context compressor.",
+  "title": "RTK Context Compressor",
+  "description": "RTK Context Compressor is a paid remote MCP endpoint for OpenAI Codex context compressor. It exposes structured JSON tools, a public server card, token-based access, usage receipts, and audit-ready workflow evidence for AI agents and coding teams.",
   "version": "1.0.0",
-  "website_url": "https://rtkcontext.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/rtk-context-compressor-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://rtkcontext.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/rtk-context-compressor-mcp",
+  "serverCardUrl": "https://rtkcontext.clauxel.com/.well-known/mcp/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,9 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
-  ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "RTK Context Compressor MCP",
-      "server_card_url": "https://rtkcontext.clauxel.com/server-card.json"
-    }
-  }
+  ]
 }
