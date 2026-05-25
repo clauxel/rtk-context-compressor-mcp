@@ -1,15 +1,12 @@
 # RTK Context Compressor
 
-RTK Context Compressor is a hosted remote MCP for OpenAI Codex context compressor.
+RTK Context Compressor is a paid remote MCP endpoint for OpenAI Codex context compressor. It exposes structured JSON tools, a public server card, token-based access, usage receipts, and audit-ready workflow evidence for AI agents and coding teams.
 
 Website: https://rtkcontext.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: OpenAI Codex context compressor
-Type: MCP
-Default plan: team
 MCP endpoint: https://rtkcontext.clauxel.com/mcp
-Server card: https://rtkcontext.clauxel.com/server-card.json
-Registry name: com.clauxel.rtkcontext/rtkcontext-mcp
-Tools: compress_context_for_task, estimate_context_savings, issue_context_receipt, read_compression_history
+Server card: https://rtkcontext.clauxel.com/.well-known/mcp/server-card.json
+Docs: https://github.com/clauxel/rtk-context-compressor-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: Hosted MCP for OpenAI Codex context compressor.
+Authentication: Bearer token required for production use.
+Tools: compress_context_for_task, estimate_context_savings, issue_context_receipt, read_compression_history
