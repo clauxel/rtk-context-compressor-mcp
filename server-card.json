@@ -1,0 +1,25 @@
+{
+  "error": "Error: server card fetch failed 522",
+  "fallback": {
+    "slug": "rtkcontext",
+    "name": "RTK Context Compressor",
+    "website": "https://rtkcontext.clauxel.com/",
+    "endpoint": "https://rtkcontext.clauxel.com/mcp",
+    "serverCard": "https://rtkcontext.clauxel.com/.well-known/mcp/server-card.json",
+    "registryName": "com.clauxel.rtkcontext/rtkcontext-mcp",
+    "tools": [
+      "compress_context_for_task",
+      "estimate_context_savings",
+      "issue_context_receipt",
+      "read_compression_history"
+    ],
+    "docsRepo": "rtk-context-compressor-mcp",
+    "docs": "https://github.com/clauxel/rtk-context-compressor-mcp",
+    "packageName": "@clauxel/rtkcontext-mcp",
+    "directoryName": "rtkcontext-mcp",
+    "category": "Knowledge & Memory",
+    "tagline": "Hosted MCP for OpenAI Codex context compressor.",
+    "description": "RTK Context Compressor is a paid remote MCP endpoint for OpenAI Codex context compressor. It exposes structured JSON tools, a public server card, token-based access, usage receipts, and audit-ready workflow evidence for AI agents and coding teams.",
+    "icon": "https://rtkcontext.clauxel.com/favicon.svg"
+  }
+}
